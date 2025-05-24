@@ -1,0 +1,13 @@
+class Solution {
+    public boolean isPalindrome(int x) {
+     int X=x;
+     int rev=0;
+     while(X>0)
+     {
+        int digit=X%10;
+        rev=rev*10+digit;
+        X=X/10;
+     }   
+     return (x==rev)?true:false;
+    }
+}
